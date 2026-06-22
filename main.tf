@@ -4,7 +4,7 @@ resource "aws_instance" "web" {
   instance_type = "t3.micro"
 
   subnet_id = aws_subnet.public.id
-  key_name = var.keyami-0521cb2d60cfbb1a6
+  key_name = var.key
 
   vpc_security_group_ids = [
     aws_security_group.ec2_sg.id
